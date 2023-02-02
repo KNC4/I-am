@@ -24,12 +24,12 @@
     new TypeIt("#text", {
   //strings: ["This is my string!"],
 })
-    .type("I was", { delay: 1000 })
+    .type('I<span style="color:rgb(81, 22, 91);" > was</span>', { delay: 1000 })
     .delete(3)
-    .type("am")
+    .type('<span style="color:rgb(90, 10, 125);" >am</span>')
     .pause(1000)
     .delete(2)
-    .type("will be")
+    .type('<span style="color:rgb(217, 0, 255);" >will be</span>')
     .pause(700)
     .type(".")
     .go();

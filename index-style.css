@@ -24,41 +24,26 @@ header .overlay{
 	width: 100%;
 	height: 100%;
 	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
+	text-shadow: 10px 9px 10px rgba(255, 255, 255, 0.14);
     background-image: linear-gradient( 135deg, #00000069 10%, #2f05396b 100%);
 	
 }
 .overlay #text{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 4rem;
+  letter-spacing: 1px;
+}
+.overlay h3{
+  font-family: 'Julius Sans One', sans-serif;
+  letter-spacing: 5px;
+  font-size: .5rem;
 }
 .test {
     height: 2000px;
     border-top: 1px solid rgba(83, 9, 96, 0);
+    border-top: 1px solid rgba(217, 0, 255, 0);
   }
-  .typing-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.input-cursor {
-    display: inline-block;
-    width: 2px;
-    height: 42px;
-    background-color: white;
-    margin-left: 8px;
-}
 
-@keyframes blink {
-  0% {opacity: 1;}
-  40% {opacity: 1;}
-  60% {opacity: 0;}
-  100% {opacity: 0;}
-}
-
-.input-cursor { 
-animation: blink .6s linear infinite alternate;
-}
 button.scroll_down {
     position: absolute;
     margin-left: auto;
@@ -81,24 +66,27 @@ button.scroll_down {
     content: '';
     width: 6px;
     height: 6px;
-    margin-left: -3px;
-    background-color: #fff;
-    border-radius: 100%;
+    margin-left: -15px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(248, 117, 255, 0.71);
+    border-radius: 20%;
     -webkit-animation: scroll_down_btn-animation 2s infinite;
-    animation: scroll_down_btn-animation 2s infinite;
+    animation: scroll_down_btn-animation 1.5s infinite;
     box-sizing: border-box;
   }
   
+  
   @keyframes scroll_down_btn-animation {
     0% {
-      transform: translate(0, 0);
+      transform:   translate(0, 0);
       opacity: 0;
     }
     40% {
       opacity: 1;
     }
     80% {
-      transform: translate(0, 20px);
+      transform: scale(.6 ) translate(0, 55px) ;
       opacity: 0;
     }
     100% {
