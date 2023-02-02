@@ -28,13 +28,13 @@ header .overlay{
     background-image: linear-gradient( 135deg, #00000069 10%, #2f05396b 100%);
 	
 }
-.overlay h1{
+.overlay #text{
     font-family: 'Julius Sans One', sans-serif;
     font-size: 4rem;
 }
 .test {
     height: 2000px;
-    border-top: 1px solid rgb(83, 9, 96);
+    border-top: 1px solid rgba(83, 9, 96, 0);
   }
   .typing-container {
     display: flex;
