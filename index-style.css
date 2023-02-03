@@ -124,7 +124,8 @@ button.scroll_down {
   /*Begin Scroll js styles*/
   .scroll-container {
     height: 100vh;
-    min-height: 450px;
+    min-height: 600px;
+    min-width: 250px;
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
@@ -156,8 +157,16 @@ button.scroll_down {
 }
 
 .scroll-element {
+  color: #ececec;
   min-height: 300px;
   height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.008);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.408);
@@ -165,9 +174,72 @@ button.scroll_down {
   -webkit-backdrop-filter: blur(5.4px);
   border: .5px solid rgba(0, 0, 0, 0.123);
 }
-
+.scroll-element h2{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
 .scroll-caption {
   margin: 1rem;
+}
+.scroll-filler{
+  padding: 10px;
+  border: .5px solid rgba(255, 0, 0, 0.037);
+  border-radius: 10px;
+  background-color: #13670000;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 1 0 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+.scroll-child{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #29006700;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 1 1 content;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+.scroll-child p{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  max-width: 50vw;
+  max-height: fit-content;
+}
+.scroll-child h3{
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: .8rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+.scroll-child a{
+  all: unset;
+  position: absolute;
+  cursor: pointer;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #ff00ea;
+  text-decoration: underline overline #2b00ff2d;
+  font-size: .8rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  animation: bigger 3s infinite;
+}
+@keyframes  bigger {
+  50%  {  font-size: 1rem; }
 }
     /*End Scroll js styles*/
 
@@ -183,11 +255,11 @@ button.scroll_down {
 }
 
 .scrolled.fade-in {
-  animation: fade-in 1s ease-in-out both;
+  animation: fade-in 3s ease-in-out both;
 }
 
 .scrolled.fade-in-bottom {
-  animation: fade-in-bottom 1s ease-in-out both;
+  animation: fade-in-bottom 1.5s ease-in-out both;
 }
 
 .scrolled.slide-left {
@@ -247,7 +319,7 @@ button.scroll_down {
 }
 
 
-/*Begin Blob*/
+/*Begin Blobs*/
 .blob { 
   position: absolute;
     width: 90vw;
@@ -264,4 +336,92 @@ button.scroll_down {
   80%  { transform: rotate(-3deg) translate(0, 5px); }
   100%   { transform: rotate(-7deg) translate(0, 0px); }   
 }
-/*End blob*/
+.blob2 { 
+  position: absolute;
+    width: 90vw;
+    height: 90vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22735.394%22 height=%22770.848%22 viewBox=%2289.887 125.035 735.394 770.848%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-90 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23611063%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%23210628%22%2F%3E%3Cstop offset=%22100%25%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M817 628q36 128-84.5 172.5t-245 83.5Q363 923 263 834T119 622.5Q75 500 97.5 362T269 235.5Q418 247 528.5 159T672 211q33 140 71 214.5T817 628Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M817 628q36 128-84.5 172.5t-245 83.5Q363 923 263 834T119 622.5Q75 500 97.5 362T269 235.5Q418 247 528.5 159T672 211q33 140 71 214.5T817 628Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  animation: blob-animation-2 10s infinite;
+}
+@keyframes  blob-animation-2 {
+  0% { transform: rotate(-100deg) translate(0,  0px); }
+  50%  { transform: rotate(10deg) translate(0, 30px); }
+  80%  { transform: rotate(-50deg) translate(0, 20px); }
+  100%   { transform: rotate(-100deg) translate(0, 0px); }   
+}
+/*End blobs*/
+
+/*Begin bars*/
+
+.bar-container {
+  margin: 10px 0px;
+  border-radius: 10px;
+  width: 100%;
+  background: rgba(62, 0, 131, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+}
+.bar-container *{
+  border-radius: 10px;
+}
+.skills {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: .8rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  padding-left: 10px;
+  text-align: left;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: white;
+}
+.skills span{
+  margin-left: 8px;
+}
+.net{width: 80%; 
+  background: linear-gradient(-45deg, #661552, #621049, #280f62, #5e0c0c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.html{width: 80%; 
+  background: linear-gradient(5deg, #152866, #10625e, #70840b, #5e500c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.css{width: 100%; 
+  background: linear-gradient(-45deg, #661552, #621049, #280f62, #5e0c0c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.angular{width: 20%; 
+  background: linear-gradient(20deg, #890000, #8b850b, #62420f, #5e0c0c);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.sql{width: 100%; 
+  background: linear-gradient(-45deg, #2b01c6, #0074d9, #860778, #720505);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+.scrum{width: 50%; 
+  background: linear-gradient(95deg, #04c601, #00d994, #0b0786, #72056d);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/*End bars*/

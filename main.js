@@ -34,7 +34,15 @@
     .type(".")
     .go();
     });
-
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      new TypeIt("#type_profession", {
+    //strings: ["This is my string!"],
+  })
+      .pause(500)
+      .type('Professional systems engineer')
+      .go();
+      });
     //Begin scroll effect
 
     const scrollElements = document.querySelectorAll(".js-scroll");
