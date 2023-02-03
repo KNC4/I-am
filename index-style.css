@@ -216,7 +216,9 @@ button.scroll_down {
   font-size: 1rem;
   letter-spacing: 4px;
   max-width: 50vw;
-  max-height: fit-content;
+  overflow: auto;
+
+  max-height: 50vw;
 }
 .scroll-child h3{
   font-family: 'Julius Sans One', sans-serif;
