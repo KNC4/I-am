@@ -215,16 +215,22 @@ button.scroll_down {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1rem;
   letter-spacing: 4px;
-  max-width: 50vw;
+  max-width: 52vw;
   overflow: auto;
-
-  max-height: 50vw;
+  max-height: 70vw;
 }
 .scroll-child h3{
   font-family: 'Julius Sans One', sans-serif;
   font-size: .8rem;
   font-weight: 100;
   margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+.scroll-child span{
+  all: unset;
+  color: #ff00e1;
+  font-weight: 300;
+  margin-bottom: 1rem;
   letter-spacing: 2px;
 }
 .scroll-child a{
@@ -354,6 +360,24 @@ button.scroll_down {
   80%  { transform: rotate(-50deg) translate(0, 20px); }
   100%   { transform: rotate(-100deg) translate(0, 0px); }   
 }
+.blob3 { 
+  position: absolute;
+    width: 90vw;
+    height: 90vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22578.05%22 height=%22709.628%22 viewBox=%22223.35 172.643 578.05 709.628%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-30 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23611063%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%23210628%22%2F%3E%3Cstop offset=%22100%25%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M772 576q-63 76-116.5 156t-172 132Q365 916 278 820t-35.5-208q51.5-112 4-221t45-179q92.5-70 191-15.5T636 306q55 55 127 124.5t9 145.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M772 576q-63 76-116.5 156t-172 132Q365 916 278 820t-35.5-208q51.5-112 4-221t45-179q92.5-70 191-15.5T636 306q55 55 127 124.5t9 145.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  animation: blob-animation-3 10s infinite;
+
+}
+@keyframes  blob-animation-3 {
+  0% { transform: rotate(-7deg) translate(0,  0px); }
+  50%  { transform: rotate(7deg) translate(0, 20px); }
+  80%  { transform: rotate(-3deg) translate(0, 5px); }
+  100%   { transform: rotate(-7deg) translate(0, 0px); }   
+}
+
 /*End blobs*/
 
 /*Begin bars*/
