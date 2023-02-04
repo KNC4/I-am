@@ -198,7 +198,7 @@ button.scroll_down {
   align-self: auto;
 }
 .scroll-child{
-  padding: 10px;
+  padding: 1px;
   border-radius: 10px;
   background-color: #29006700;
   -webkit-order: 0;
@@ -213,7 +213,7 @@ button.scroll_down {
 }
 .scroll-child p{
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   letter-spacing: 4px;
   max-width: 50vw;
   overflow: auto;
@@ -226,12 +226,16 @@ button.scroll_down {
   margin-bottom: 2rem;
   letter-spacing: 2px;
 }
-.scroll-child span{
+.scroll-child .highlight{
   all: unset;
+  
+  font-family: 'Julius Sans One', sans-serif;
   color: #ff00e1;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 1rem;
   letter-spacing: 2px;
+  overflow: auto;
 }
 .scroll-child a{
   all: unset;
