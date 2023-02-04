@@ -215,7 +215,7 @@ button.scroll_down {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1rem;
   letter-spacing: 4px;
-  max-width: 52vw;
+  max-width: 50vw;
   overflow: auto;
   max-height: 70vw;
 }
