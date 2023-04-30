@@ -24,12 +24,12 @@
     new TypeIt("#text", {
   //strings: ["This is my string!"],
 })
-    .type('I<span style="color:rgb(81, 22, 91);" > was</span>', { delay: 1000 })
+    .type('I<span style="color:rgb(229, 115, 115);" > was</span>', { delay: 1000 })
     .delete(3)
-    .type('<span style="color:rgb(90, 10, 125);" >am</span>')
+    .type('<span style="color:rgb(229, 115, 115);" >am</span>')
     .pause(1000)
     .delete(2)
-    .type('<span style="color:rgb(217, 0, 255);" >will be</span>')
+    .type('<span style="color:rgb(129, 199, 132);" >will be</span>')
     .pause(700)
     .type(".")
     .go();
@@ -40,7 +40,7 @@
     //strings: ["This is my string!"],
   })
       .pause(500)
-      .type('Professional systems engineer')
+      .type('Junior systems engineer')
       .go();
       });
     //Begin scroll effect
