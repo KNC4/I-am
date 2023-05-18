@@ -1,0 +1,185 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    background: #141414;
+}
+
+::selection {
+    background: #222222;
+    color: #e6e6e6;
+}
+
+img {
+    pointer-events: none;
+}
+
+.landingPage {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landingPage .topSide {
+    width: 93%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landingPage .topSide .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landingPage .topSide .logo a img {
+    width: 100px;
+}
+
+.landingPage .topSide .logo a p.websiteName {
+    font-size: 21px; 
+    margin-left: 10px;
+    color: #81c784;
+}
+
+.landingPage .topSide .freelancerName p {
+    font-size: 32px;
+    color: #e6e6e6;
+    text-align: right;
+}
+
+.landingPage .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: #81c784;
+    height: 100vh;
+    width: 55px;
+    writing-mode: vertical-lr;
+    position: absolute;
+    top: 50%;
+    right: 0rem;
+    transform: translateY(-50%);
+}
+
+.landingPage .navBar a.link {
+    color: #141414;
+    transition: all 0.2s ease-in-out;
+}
+
+.landingPage .navBar a.link:hover {
+    color: #e6e6e6;
+    text-decoration: line-through;
+}
+
+.landingPage .mainImage {
+    overflow: hidden;
+    position: absolute;
+    left: -55px;
+    width: 100%;
+    height: auto;
+    bottom: -100px;
+    z-index: -1;
+}
+
+.svg{
+    position: absolute;
+    width: 150%;
+    min-width: 100%;
+    height: auto;
+}
+
+
+.landingPage .mainImage img {
+    /* max-width: 100%; */
+}
+
+.landingPage .bottomLeftSide {
+    backdrop-filter: blur(10px) ;
+    background-color: rgba(35, 36, 36, 0.46);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    margin-right: 200px;
+}
+
+.landingPage .bottomLeftSide p.job {
+    font-size: 32px;
+}
+
+.landingPage .bottomLeftSide p.location {
+    font-size: 21px;
+    color: #e6e6e6;
+}
+
+.landingPage .bottomLeftSide p.location span {
+    color: #81c784;
+}
+
+.landingPage .bottomRightSide {
+    position: absolute;
+    right: 4rem;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.landingPage .bottomRightSide a i {
+    font-size: 21px;
+    transition: all 0.2s ease-in-out;
+}
+
+.landingPage .bottomRightSide a i:hover {
+    color: #222222;
+}
+
+
+/* =============================================================================================== */
+/* ======================================= Responsive ============================================ */
+/* =============================================================================================== */
+
+@media screen and (max-width: 768px) {
+    .landingPage .topSide .freelancerName {
+        display: none;
+    }
+
+    .landingPage .mainImage {
+        bottom: -40px;
+    }
+
+    .landingPage .bottomLeftSide {
+        top: 6rem;
+        bottom: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .landingPage .mainImage {
+        /* display: none; */
+    }
+}

@@ -16,7 +16,7 @@ header {
 	background: url(waves.svg);
 	text-align: center;
 	width: 100%;
-	height: 90vh;
+	height: 100svh;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
@@ -88,6 +88,11 @@ button.scroll_down {
     animation: scroll_down_btn-animation 1.5s infinite;
     box-sizing: border-box;
   
+  }
+
+  .email{
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   @keyframes scroll_down_btn-animation {
@@ -307,59 +312,6 @@ button.scroll_down {
 }
 
 
-/*Begin Blobs*/
-.blob { 
-  position: absolute;
-    width: 90vw;
-    height: 90vh;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22592.511%22 height=%22713.592%22 viewBox=%22161.204 161.348 592.511 713.592%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(30 .5 .5)%22%3E%3Cstop offset=%220%25%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%232b082a%22%2F%3E%3Cstop offset=%22100%25%22 stop-color=%22%23481357%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M747 679.5q39 179.5-148.5 194T326 756.5q-85-131.5-147-286t92-226Q425 173 601.5 162T743 325.5q-35 174.5 4 354Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M747 679.5q39 179.5-148.5 194T326 756.5q-85-131.5-147-286t92-226Q425 173 601.5 162T743 325.5q-35 174.5 4 354Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-   animation: blob-animation-1 10s infinite;
-}
-@keyframes  blob-animation-1 {
-  0% { transform: rotate(-7deg) translate(0,  0px); }
-  50%  { transform: rotate(7deg) translate(0, 20px); }
-  80%  { transform: rotate(-3deg) translate(0, 5px); }
-  100%   { transform: rotate(-7deg) translate(0, 0px); }   
-}
-.blob2 { 
-  position: absolute;
-    width: 90vw;
-    height: 90vh;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22735.394%22 height=%22770.848%22 viewBox=%2289.887 125.035 735.394 770.848%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-90 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23611063%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%23210628%22%2F%3E%3Cstop offset=%22100%25%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M817 628q36 128-84.5 172.5t-245 83.5Q363 923 263 834T119 622.5Q75 500 97.5 362T269 235.5Q418 247 528.5 159T672 211q33 140 71 214.5T817 628Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M817 628q36 128-84.5 172.5t-245 83.5Q363 923 263 834T119 622.5Q75 500 97.5 362T269 235.5Q418 247 528.5 159T672 211q33 140 71 214.5T817 628Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  animation: blob-animation-2 10s infinite;
-}
-@keyframes  blob-animation-2 {
-  0% { transform: rotate(-100deg) translate(0,  0px); }
-  50%  { transform: rotate(10deg) translate(0, 30px); }
-  80%  { transform: rotate(-50deg) translate(0, 20px); }
-  100%   { transform: rotate(-100deg) translate(0, 0px); }   
-}
-.blob3 { 
-  position: absolute;
-    width: 90vw;
-    height: 90vh;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 width=%22578.05%22 height=%22709.628%22 viewBox=%22223.35 172.643 578.05 709.628%22%3E%3Cdefs%3E%3ClinearGradient id=%22b%22 gradientTransform=%22rotate(-30 .5 .5)%22%3E%3Cstop offset=%220%25%22 stop-color=%22%23611063%22%2F%3E%3Cstop offset=%2250%25%22 stop-color=%22%23210628%22%2F%3E%3Cstop offset=%22100%25%22%2F%3E%3C%2FlinearGradient%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M772 576q-63 76-116.5 156t-172 132Q365 916 278 820t-35.5-208q51.5-112 4-221t45-179q92.5-70 191-15.5T636 306q55 55 127 124.5t9 145.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22url(%23b)%22 d=%22M772 576q-63 76-116.5 156t-172 132Q365 916 278 820t-35.5-208q51.5-112 4-221t45-179q92.5-70 191-15.5T636 306q55 55 127 124.5t9 145.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  animation: blob-animation-3 10s infinite;
-
-}
-@keyframes  blob-animation-3 {
-  0% { transform: rotate(-7deg) translate(0,  0px); }
-  50%  { transform: rotate(7deg) translate(0, 20px); }
-  80%  { transform: rotate(-3deg) translate(0, 5px); }
-  100%   { transform: rotate(-7deg) translate(0, 0px); }   
-}
-
-/*End blobs*/
-
 /*Begin bars*/
 
 .bar-container {
@@ -450,7 +402,7 @@ button.scroll_down {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding: 20px;
+  padding: 40px;
   width: 100%;
   height: fit-content;
   box-shadow: 0px 0px 70px 30px rgba(0, 0, 0, 0.99) inset;
@@ -465,7 +417,7 @@ button.scroll_down {
   max-width: 900px;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 8px;
 }
 
 .column {
@@ -488,7 +440,9 @@ button.scroll_down {
 
 /* End Portafolio banner */
 
-@media (max-width: 280px) {
+
+
+@media (max-width: 400px) {
   .scroll-container {
     min-width: 100%;
   }
@@ -499,11 +453,6 @@ button.scroll_down {
   .scroll-element{
     width: 100%;
 }
-.email{
-  font-size: .5rem !important;
-}
-
-
 
 }
 
