@@ -8,7 +8,7 @@ html{
 }
 body{
     padding: 0; margin: 0;
-    background-color: #141414;
+    background-color: #222222;
 }
 *{padding: 0; margin: 0; box-sizing: border-box; color: #e6e6e6e6; font-family: 'Open Sans', sans-serif !important;}
 
@@ -136,8 +136,8 @@ button.scroll_down {
   /*Begin Scroll js styles*/
   .scroll-container {
     overflow-y: auto;
-    height: 100vh;
-    min-height: 700px;
+    height: fit-content;
+    min-height: fit-content;
     min-width: 280px;
     padding: 2rem 1rem;
     display: flex;
@@ -168,11 +168,11 @@ button.scroll_down {
   align-content: center;
   padding: 20px;
   background: #222222;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.408);
-  backdrop-filter: blur(5.4px);
-  -webkit-backdrop-filter: blur(5.4px);
-  border: .5px solid rgba(0, 0, 0, 0.123);
+  border-radius: 50px;
+  background: linear-gradient(145deg, #242424, #1f1f1f);
+  box-shadow:  9px 9px 39px #161616,
+               -9px -9px 39px #2e2e2e;
+  overflow: auto;
 }
 .scroll-caption {
   margin: 1rem;
@@ -194,12 +194,28 @@ button.scroll_down {
   align-self: auto;
 }
 
+ .skill-list {
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  align-content: center ;
+  justify-content: flex-start;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+}
+
 .scroll-child p{
   font-size: 1rem;
   letter-spacing: 0px;
-  max-width: 70%;
+  max-width: 80%;
   overflow: auto;
-  max-height: 70vw;
 }
 .scroll-element h2{
   text-transform: uppercase;
@@ -223,16 +239,7 @@ button.scroll_down {
   letter-spacing: 2px;
   overflow: auto;
 }
-.scroll-child a{
-  all: unset;
-  cursor: pointer;
-  color: #33475b;
-  text-decoration: underline;
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  letter-spacing: 2px;
-}
+
 
     /*End Scroll js styles*/
 
@@ -312,7 +319,7 @@ button.scroll_down {
 }
 
 
-/*Begin bars*/
+/*Begin Skills*/
 
 .bar-container {
   margin: 10px 0px;
@@ -327,73 +334,34 @@ button.scroll_down {
   border-radius: 10px;
 }
 .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 1rem;
-  font-weight: 100;
+  font-size: 25px !important;
   letter-spacing: 5px;
-  padding-left: 10px;
-  text-align: left;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  color: white;
-  height: 30px;
+  padding:7px;
+  min-width: 150px;
+  min-height: 125px;
+  flex: 1 1 auto;
 }
-.years{
-  font-style: italic;
-  font-size: .4rem;
-}
-.net{width: 70%; 
-  background: linear-gradient(-45deg, #661552, #621049, #280f62, #5e0c0c);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-.html{width: 85%; 
-  background: linear-gradient(5deg, #152866, #10625e, #70840b, #5e500c);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+.tag{
+  padding: 7px;
+  border-width: 1px;
+  background: linear-gradient(145deg, #242424, #1f1f1f);
+  box-shadow:  5px 5px 25px #121212,
+               -5px -5px 25px #323232;
+  border-radius: 7px;
+  border: none;
+  color: #e6e6e6;
 }
 
-.angular{width: 51%; 
-  background: linear-gradient(20deg, #890000, #8b850b, #62420f, #5e0c0c);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+.tag:hover{
+  box-shadow: inset 9px 9px 28px #121212,
+  inset -9px -9px 28px #323232;
 }
-
-.flutter{width: 45%; 
-  background: linear-gradient(20deg, #1e0089, #0b148b, #260f62, #5e0c0c);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-
-.sql{width: 85%; 
-  background: linear-gradient(-45deg, #2b01c6, #0074d9, #860778, #720505);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-
-.vue{width: 40%; 
-  background: linear-gradient(-45deg, #3fb27f, #33475b, #202124, #f7f7f7);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-.scrum{width: 60%; 
-  background: linear-gradient(95deg, #04c601, #00d994, #0b0786, #72056d);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-/*End bars*/
+/*End Skills*/
 
 /* Portafolio banner */
 
@@ -405,7 +373,9 @@ button.scroll_down {
   padding: 40px;
   width: 100%;
   height: fit-content;
-  box-shadow: 0px 0px 70px 30px rgba(0, 0, 0, 0.99) inset;
+  background: #222222;
+  box-shadow: inset 20px 20px 31px #1d1d1d,
+              inset -20px -20px 31px #272727; 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -442,7 +412,7 @@ button.scroll_down {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .scroll-container {
     min-width: 100%;
   }
@@ -456,7 +426,7 @@ button.scroll_down {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .row {
     display: flex;
     flex-direction: column;
@@ -475,10 +445,8 @@ button.scroll_down {
 /* Footer */
 footer {
     background-image: url("waves.svg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 40px 100px 30px rgba(0, 0, 0, 0.99) inset;
-
+    box-shadow: inset 15px 15px 49px #121212,
+    inset -15px -15px 49px #323232;
   display: flex;
   justify-content: center;
   align-items: center;

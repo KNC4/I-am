@@ -24,7 +24,7 @@
     new TypeIt("#text", {
   //strings: ["This is my string!"],
 })
-    .type('I<span style="color:rgb(229, 115, 115);" > was</span>', { delay: 1000 })
+    .type('I <span style="color:rgb(229, 115, 115);" >was</span>', { delay: 1000 })
     .delete(3)
     .type('<span style="color:rgb(229, 115, 115);" >am</span>')
     .pause(1000)

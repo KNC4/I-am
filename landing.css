@@ -58,13 +58,19 @@ img {
 .landingPage .topSide .logo a p.websiteName {
     font-size: 21px; 
     margin-left: 10px;
-    color: #81c784;
+    color: #f6f6f6;
 }
 
-.landingPage .topSide .freelancerName p {
+.landingPage .topSide .freelancerName .myName {
     font-size: 32px;
     color: #e6e6e6;
     text-align: right;
+}
+.projectName{
+  font-size: 16px;
+  font-style: italic;
+  color: #e6e6e6;
+  text-align: right;
 }
 
 .landingPage .navBar {
@@ -72,7 +78,7 @@ img {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    background: #81c784;
+    background: #222222;
     height: 100vh;
     width: 55px;
     writing-mode: vertical-lr;
@@ -83,12 +89,13 @@ img {
 }
 
 .landingPage .navBar a.link {
-    color: #141414;
+    color: #f6f6f6;
     transition: all 0.2s ease-in-out;
+    text-decoration: underline;
 }
 
 .landingPage .navBar a.link:hover {
-    color: #e6e6e6;
+    color: #616161;
     text-decoration: line-through;
 }
 
@@ -117,7 +124,7 @@ img {
 .car1 {
     width: 50px;
     height: 15px;
-    background-color: #1b2a38;
+    background-color: #222222;
     position: absolute;
     animation: toright 5s linear infinite;
     bottom: 10px;
@@ -248,7 +255,7 @@ img {
 }
 
 .landingPage .bottomLeftSide p.location span {
-    color: #81c784;
+    color: #e57373;
 }
 
 .landingPage .bottomRightSide {
